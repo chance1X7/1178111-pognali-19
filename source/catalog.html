@@ -8,7 +8,7 @@
     	<header class="page-header">
 	
 	<nav class="main-nav">
-		<a href="main-nav__logo"><img class="main-nav__logo-image" src="img/logo-mobile-white.png" width="100" height="20" alt="Логотип Погнали"></a>
+		<img class="main-nav__logo-image" src="img/logo-mobile-white.png" width="100" height="20" alt="Логотип Погнали">
 
 		<div class="main-nav__wrapper">
 			<button class="main-nav__toggle" type="button"> <span class="visually-hidden">открыть меню</span></button>
@@ -20,7 +20,7 @@
     					<a class="site-list__link" href="form.html">направления</a>
     				</li>
     				<li class="site-list__item">
-    					<a class="site-list__link" href="#">попутчики</a>
+    					<a class="site-list__link">попутчики</a>
     				</li>
     			</ul>
     			<ul class="main-nav__list user-list">
@@ -50,18 +50,19 @@
 	    </nav>
 	</header>
     	<main class="page-main">
-			<h1 class="visually-hidden">сервис поиска попутчиков </h1>
-			<p class="page-main__travellers">Попутчики </p>
-				<ul class="page-main__findtraveller findtraveller">
+			<h1 class="page-main__travellers">Попутчики </h1>
 
-				<li class="page-main__user">
-						<h3 class="page-main__user-name"><a class="page-main__link" href="profile.html">Таня Фирсова</a></h3>
-						<span class="offline">offline</span>
-						<img class="page-main__picture" src="img/pictf2.png">
-						<p class="page-main__user-likes">1,5 М</p> <button type="button"></button>
+			<section class="page-block">
+				<ul class="page-block__findtraveller findtraveller">
 
-						<div class="page-main__user-wrapper">
-							<ul class="page-main__user user-habits">
+				<li class="findtraveller__user">
+						<img class="findtraveller__picture" src="img/pictf2.png">
+
+						<div class="findtraveller__user-wrapper">
+							<h3 class="findtraveller__user-name"><a class="findtraveller__link" href="profile.html">Таня Фирсова</a></h3>
+							<span class="offline">offline</span>
+							<p class="findtraveller__user-likes">1,5 М</p> <button type="button"><span class="visually-hidden">поставить лайк</span></button>
+							<ul class="findtraveller__user user-habits">
 								<li><a href="#">#ЗОЖ</a></li>
 								<li><a href="#">#ПП</a></li>
 								<li><a href="#">#Фитнес</a></li>
@@ -69,121 +70,124 @@
 								<li><a href="#">#авокадо</a></li>
 								<li><a href="#">#смузи</a></li>
 							</ul>	
-							<ul class="page-main__user user-aims"><p>хочет посетить:</p>	
+							<ul class="findtraveller__user user-aims"><p>хочет посетить:</p>	
 								<li class="user-aims__destination"><img class="user-aims__picture" src="img/shri.png"><p>шри-ланка</p></li>
 								<li class="user-aims__destination"><img class="user-aims__picture" src="img/thai.png"><p>тайланд</p></li>
 								<li class="user-aims__destination"><img class="user-aims__picture" src="img/seysh.png"><p>сейшелы</p></li>
 							</ul>
 							
-							<ul class="page-main__travelby travelby"><p>танспорт</p>
-								<li class="travelby-list__item"><span class="visually-hidden">plane</span></li>
-								<li class="travelby-list__item"><span class="visually-hidden">bus</span></li>
-								<li class="travelby-list__item"><span class="visually-hidden">bike</span></li>
-								<li class="travelby-list__item"><span class="visually-hidden">run</span></li>
+							<ul class="findtraveller__travelby travelby"><p>танспорт</p>
+								<li class="travelby__item"><span class="visually-hidden">plane</span></li>
+								<li class="travelby__item"><span class="visually-hidden">bus</span></li>
+								<li class="travelby__item"><span class="visually-hidden">bike</span></li>
+								<li class="travelby__item"><span class="visually-hidden">run</span></li>
 							</ul>
 							
-							<ul class="page-main__user level"><p>левел</p>
+							<ul class="findtraveller__user level"><p>левел</p>
 								<li class="level__item"><p>99</p></li>
 							</ul>
-							<button class="page-main__button button" type="button" value="Позвать">Позвать</button>
+							<button class="findtraveller__button button" type="button" value="Позвать">Позвать</button>
 						</div>
 				</li>
 						
-				<li class="page-main__user">
-						<h3 class="page-main__user-name"><a class="page-main__link" href="profile.html">Петя Демин</a></h3>
-						<span class="offline">offline</span>
-						<p class="page-main__user-picture"><img class="page-main__picture" src="img/pictf2.png"></p>
-						<p class="page-main__user-likes">1500</p> <button type="button"></button>
+				<li class="findtraveller__user">
+						<img class="findtraveller__picture" src="img/picpd.png">
 
-					<div class="page-main__user-wrapper">
-						<ul class="page-main__user user-habits">
+					<div class="findtraveller__user-wrapper">
+						<h3 class="findtraveller__user-name"><a class="findtraveller__link" href="profile.html">Петя Демин</a></h3>
+						<span class="offline">offline</span>
+						<p class="findtraveller__user-likes">1500</p> <button type="button"><span class="visually-hidden">поставить лайк</span></button>
+						<ul class="findtraveller__user user-habits">
 							<li><a href="#">#бургер</a></li>
 							<li><a href="#">#бар</a></li>
 							<li><a href="#">#футбол</a></li>
 							<li><a href="#">#концерт</a></li>
 							<li><a href="#">#крафт</a></li>
 						</ul>	
-						<ul class="page-main__user user-aims"><p>хочет посетить:</p>	
+						<ul class="findtraveller__user user-aims"><p>хочет посетить:</p>	
 							<li class="user-aims__destination"><img class="user-aims__picture" src="img/belg.png"><p>бельгия</p></li>
 							<li class="user-aims__destination"><img class="user-aims__picture" src="img/czech.png"><p>чехия</p></li>
 						</ul>
-						<ul class="page-main__travelby travelby"><p>танспорт</p>
-								<li class="travelby-list__item"><span class="visually-hidden">plane</span></li>
-								<li class="travelby-list__item"><span class="visually-hidden">bus</span></li>
-								<li class="travelby-list__item"><span class="visually-hidden">bike</span></li>
-								<li class="travelby-list__item"><span class="visually-hidden">run</span></li>
+						<ul class="findtraveller__travelby travelby"><p>танспорт</p>
+								<li class="travelby__item"><span class="visually-hidden">plane</span></li>
+								<li class="travelby__item"><span class="visually-hidden">bus</span></li>
+								<li class="travelby__item"><span class="visually-hidden">bike</span></li>
+								<li class="travelby__item"><span class="visually-hidden">run</span></li>
 						</ul>
-						<ul class="page-main__user level"><p>левел</p>
+						<ul class="findtraveller__user level"><p>левел</p>
 
 						<li class="level__item"><p>80</p></li>
 						</ul>
-						<button class="page-main__button button" type="button" value="Позвать">Позвать</button>
+						<button class="findtraveller__button button" type="button" value="Позвать">Позвать</button>
 					</div>
 				</li>
 
-				<li class="page-main__user">
-						<h3 class="page-main__user-name"><a class="page-main__link" href="profile.html">Марк Смолов</a></h3>
-						<span class="offline">offline</span>
-						<p class="page-main__user-picture"><img class="page-main__picture" src="img/pictf2.png"></p>
-						<p class="page-main__user-likes">170</p> <button type="button"></button>
+				<li class="findtraveller__user">
+						
+						<img class="findtraveller__picture" src="img/picms.png">
 
-						<div class="page-main__user-wrapper">
-							<ul class="page-main__user user-habits">
+						<div class="findtraveller__user-wrapper">
+							<h3 class="findtraveller__user-name"><a class="findtraveller__link" href="profile.html">Марк Смолов</a></h3>
+							<span class="offline">offline</span>
+							<p class="findtraveller__user-likes">170</p> <button type="button"><span class="visually-hidden">поставить лайк</span></button>
+							<ul class="findtraveller__user user-habits">
 								<li><a href="#">#рэп</a></li>
 								<li><a href="#">#тату</a></li>
 								<li><a href="#">#хайпбист</a></li>
 								<li><a href="#">#кроссовки</a></li>
 								<li><a href="#">#суприм</a></li>
 							</ul>	
-							<ul class="page-main__user user-aims"><p>хочет посетить:</p>	
+							<ul class="findtraveller__user user-aims"><p>хочет посетить:</p>	
 								<li class="user-aims__destination"><img class="user-aims__picture" src="img/usa.png"><p>сша</p></li>
 								<li class="user-aims__destination"><img class="user-aims__picture" src="img/aust.png"><p>австралия</p></li>
 								<li class="user-aims__destination"><img class="user-aims__picture" src="img/domin.png"><p>доминикана</p></li>
 							</ul>
-							<ul class="page-main__travelby travelby"><p>танспорт</p>
-									<li class="travelby-list__item"><span class="visually-hidden">plane</span></li>
-									<li class="travelby-list__item"><span class="visually-hidden">bus</span></li>
-									<li class="travelby-list__item"><span class="visually-hidden">bike</span></li>
-									<li class="travelby-list__item"><span class="visually-hidden">run</span></li>
+							<ul class="findtraveller__travelby travelby"><p>танспорт</p>
+									<li class="travelby__item"><span class="visually-hidden">plane</span></li>
+									<li class="travelby__item"><span class="visually-hidden">bus</span></li>
+									<li class="travelby__item"><span class="visually-hidden">bike</span></li>
+									<li class="travelby__item"><span class="visually-hidden">run</span></li>
 							</ul>
 
-							<ul class="page-main__user level"><p>левел</p>
+							<ul class="findtraveller__user level"><p>левел</p>
 								<li class="level__item"><p>25</p></li>
 							</ul>
-							<button class="page-main__button button" type="button" value="Позвать">Позвать</button>
+							<button class="findtraveller__button button" type="button" value="Позвать">Позвать</button>
 						</div>
 				</li>
 
-				<li class="page-main__user">
-						<h3 class="page-main__user-name"><a class="page-main__link" href="profile.html">Лариса Роговая</a></h3>
-						<span class="online">online</span>
-						<p class="page-main__user-picture"><img class="page-main__picture" src="img/pictf2.png"></p>
-						<p class="page-main__user-likes">170</p> <button type="button"></button>
+				<li class="findtraveller__user">
+						
+						<img class="findtraveller__picture" src="img/piclr.png">
 
-						<div class="page-main__user-wrapper">
-							<ul class="page-main__user user-habits">
+						<div class="findtraveller__user-wrapper">
+							<h3 class="findtraveller__user-name"><a class="findtraveller__link" href="profile.html">Лариса Роговая</a></h3>
+							<span class="online">online</span>
+							<p class="findtraveller__user-likes">170</p> <button type="button"><span class="visually-hidden">поставить лайк</span></button>
+							<ul class="findtraveller__user user-habits">
 								<li><a href="#">#образование</a></li>
 								<li><a href="#">#карьера</a></li>
 								<li><a href="#">#учеба</a></li>
 								<li><a href="#">#линкедин</a></li>
 							</ul>	
-							<ul class="page-main__user user-aims"><p>хочет посетить:</p>	
+							<ul class="findtraveller__user user-aims"><p>хочет посетить:</p>	
 								<li class="user-aims__destination"><img class="user-aims__picture" src="img/grbr.png"><p>великобритания</p></li>
 								<li class="user-aims__destination"><img class="user-aims__picture" src="img/germ.png"><p>германия</p></li>
 							</ul>
-							<ul class="page-main__travelby travelby"><p>танспорт</p>
-									<li class="travelby-list__item"><span class="visually-hidden">plane</span></li>
-									<li class="travelby-list__item"><span class="visually-hidden">bus</span></li>
-									<li class="travelby-list__item"><span class="visually-hidden">bike</span></li>
-									<li class="travelby-list__item"><span class="visually-hidden">run</span></li>
+							<ul class="findtraveller__travelby travelby"><p>танспорт</p>
+									<li class="travelby__item"><span class="visually-hidden">plane</span></li>
+									<li class="travelby__item"><span class="visually-hidden">bus</span></li>
+									<li class="travelby__item"><span class="visually-hidden">bike</span></li>
+									<li class="travelby__item"><span class="visually-hidden">run</span></li>
 							</ul>
-							<ul class="page-main__user level"><p>левел</p>
+							<ul class="findtraveller__user level"><p>левел</p>
 							<li class="level__item"><p>50</p></li>
 							</ul>
-							<button class="page-main__button button" type="button" value="Позвать">Позвать</button>
+							<button class="findtraveller__button button" type="button" value="Позвать">Позвать</button>
 						</div>
 				</li>
 				</ul>
+			</section>
 				<a class="page-main__all button" href="#">Показать еще</a>
 		
 					<button class="page__prev" type="button">вперед</button>
