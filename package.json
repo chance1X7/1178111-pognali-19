@@ -41,6 +41,7 @@
   "dependencies": {
     "eslint": "^6.8.0",
     "grunt-cli": "^1.3.2",
+    "normalize.less": "^1.0.0",
     "postcss": "^7.0.27",
     "stylelint_d": "^1.3.1"
   }
