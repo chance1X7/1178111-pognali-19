@@ -1,10 +1,41 @@
 .site-list {
   width: 183px;
-  min-height: 95px;
-  color: #192144;
-  font-family: "Blogger Sans";
+  margin-top: 78px;
+
+
+
+  @media (min-width: 768px) {
+
+    margin-left: 40px;
+
+  }
+
+  @media (min-width: 1440px) {
+    width: 390px;
+    display: flex;
+    justify-content: space-between;
+    margin:0;
+    padding:0;
+    margin-left: 120px;
+    margin-top:35px;
+
+
+  }
+}
+
+.site-list a {
+  display: block;
   font-size: 30px;
   font-weight: 500;
   line-height: 36px;
+  color: #192144;
   text-transform: uppercase;
+
+  @media (min-width: 1440px) {
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+
 }

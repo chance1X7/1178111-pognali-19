@@ -5,15 +5,21 @@
   <meta charset="utf-8">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title> Погнали</title>
 </head>
 
 <body>
   <header class="page-header">
-    <nav class="main-nav">
-      <a class="main-nav__logo"><img class="main-nav__logo-image" src="img/logo-mobile-white.png" width="100" height="20" alt="Логотип Погнали"></a>
+    <nav class="main-nav main-nav--closed">
+      <a class="main-nav__logo">
+        <picture>
+        <source  media="(min-width: 768px)" srcset="../img/logo-tablet-blue.png" >
+        <source  media="(min-width: 1440px)" srcset="../img/logo-desktop-blue.png" >
+        <img class="main-nav__logo-image" src="img/logo-mobile-blue.png" width="96" height="15" alt="Логотип Погнали">
+       </picture></a>
+       <button class="main-nav__toggle" type="button"> <span class="visually-hidden">открыть меню</span></button>
       <div class="main-nav__wrapper">
-        <button class="main-nav__toggle" type="button"> <span class="visually-hidden">открыть меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="#">о сервисе</a>
@@ -63,7 +69,7 @@
           <a class="main-contacts__link" href="mailto:mail@htmlacademy.ru"><span class="visually-hidden">mail@htmlacademy.ru</span></a>
         </li>
       </ul>
-      <ul class="main-top__user-list user-list">
+      <ul class="main-top__user-list user-list2">
         <li class="user-list__item">
           <a class="user-list__login" href="login.html">авторизация</a>
         </li>
@@ -169,7 +175,7 @@
           <div class="travellers__item-wrapper">
             <ul class="travellers__country-list">
               <li class="travellers__country-item"><img class="travellers__country-picture" src="img/belg.png" alt="бельгия"></li>
-              <li class="travellers__country-item"><img class="travellers__country-picture" src="img/czech.png" width="35" height="24 alt="чехия"></li>
+              <li class="travellers__country-item"><img class="travellers__country-picture" src="img/czech.png" width="35" height="24 alt=" чехия"></li>
             </ul>
             <div class="travellers__name-wrapper">
               <h3 class="travellers__name"><a class="travellers__link" href="profile.html">Петя Демин</a></h3>
