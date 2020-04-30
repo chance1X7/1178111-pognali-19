@@ -1,12 +1,18 @@
 .main-nav {
-  width: 270px;
+  width: 320px;
+  min-height:570px;
   margin: 0 auto;
+  padding: 0;
+  padding-left: 25px;
+  padding-right: 25px;
   position: relative;
-  display: flex;
-  flex-direction: column;
+  display: inline-flex;
+  justify-content: space-between;
+  background-color: #ffffff;
 
   @media (min-width: 768px) {
     width: 670px;
+    min-height:920px;
     padding: 0 40px;
     margin: 0 auto;
 
@@ -16,6 +22,7 @@
     width: 1320px;
     padding: 0 60px;
     margin: 0 auto;
+    padding-bottom:25px;
 
     flex-direction: row;
     align-items: stretch;
@@ -23,16 +30,34 @@
   }
 }
 
+
 .main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    align-items: flex-start;
+    text-align: left;
+
+  }
+
   @media (min-width: 1440px) {
-    width: 970px;
+    width: 1020px;
     margin: 0px;
     padding: 0px;
-    display: flex;
-    justify-content: space-between;
+    margin-left:250px;
+
+
   }
 }
 
+.main-nav__wrapper li{
+  margin:0;
+    padding:0;
+}
 .main-nav__list {
   @media (min-width: 1440px) {
     width: 970px;
@@ -48,7 +73,10 @@
 
 .main-nav__logo img {
   display: block;
-  margin-top: 27px;
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
+
 
   @media (min-width: 768px) {
     width: 165px;
@@ -66,9 +94,10 @@
 }
 
 .main-nav__toggle {
-  position: absolute;
-  top: 27px;
-  left: 245px;
+
+  margin-top: 20px;
+
+  left: 300px;
   z-index: 2;
 
   display: block;
@@ -81,7 +110,7 @@
 
   @media (min-width: 768px) {
     position: absolute;
-    top: 55px;
+    top: 35px;
     right: 375px;
 
   }
@@ -90,8 +119,7 @@
     position: absolute;
     width: 45px;
     height: 2px;
-    top: 45px;
-    right: 315px;
+    top: 30px;
     background-color: #192144;
 
   }
