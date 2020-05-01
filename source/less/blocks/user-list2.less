@@ -1,14 +1,20 @@
 .user-list2 {
-  width: 189px;
-  height: 40px;
-  border-radius: 20px;
-  background-color: #ffd74b;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
-  margin-top: 250px;
-  margin-left: 80px;
+  margin: 0 auto;
 
+  margin-top: 260px;
+
+
+
+
+  @media (min-width: 768px) {
+    display: none;
+
+  }
 }
 
 .user-list2 a {
@@ -21,5 +27,12 @@
 }
 
 .user-list2__item {
-  padding-top: 5px;
+  width: 189px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #ffd74b;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
 }
