@@ -1,4 +1,7 @@
 .main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-left: 25px;
   padding-right: 25px;
   width: auto;
@@ -6,6 +9,7 @@
   margin-right: auto;
   margin: 0 auto;
   background-color: #ffffff;
+  position: relative;
 
 
 
@@ -49,7 +53,7 @@
     width: 1020px;
     margin: 0px;
     padding: 0px;
- }
+  }
 }
 
 .main-nav__wrapper li {
@@ -60,18 +64,17 @@
 
 
 .main-nav__logo {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  margin: 0 auto;
-  margin-top: 25px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 2;
 
 
 
 }
 
 .main-nav__logo-image {
-  display: block;
+
   width: 96px;
   height: 15px;
 
@@ -82,18 +85,74 @@
 
 
 .main-nav__toggle {
-  display: inline-block;
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 25px;
+  height: 3px;
 
 
-  margin: 0;
-  padding: 0;
-  margin-top: 25px;
+  background-color: transparent;
+
+  cursor: pointer;
+  border: none;
+
+  }
+.main-nav--closed{
+  padding-bottom:75px ;
+}
+
+.main-nav--closed .main-nav__wrapper {
+  display:none
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 30px;
+  right: 35px;
 
   width: 25px;
-  height: 20px;
-
+  height: 3px;
 
   background-color: #cccccc;
+  box-shadow: 0 8px 0 0 #cccccc;
 
+}
+
+
+.main-nav--opened .main-nav__toggle {
+  top: 30px;
+  right: 35px;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+
+
+    width: 25px;
+  height: 3px;
+
+
+    background-color: #cccccc;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
 }
